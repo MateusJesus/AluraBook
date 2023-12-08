@@ -1,0 +1,90 @@
+.card {
+    padding: 1em;
+    margin: 1em auto;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 2s;
+}
+
+.card__l1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card__descricao-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.card__descricao-subtitulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--azul-escuro);    
+    text-transform: uppercase;
+    margin: .5em 0;
+}
+
+.card__descricao-paragrafo {
+    font-size: 14px;
+}
+
+.card__l2-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__l2-botoes-icones {
+    display: flex;
+    margin: 1em 0em;
+}
+.card__l2-botoes-icones-icone {
+    margin: 0 0.5em;
+}
+
+.card__l2-botoes-saibamais {
+    background-color: var(--laranja);
+    padding: 1em 2.20em;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.card__l1-descricao-estrelinhas{ 
+    margin: 0.5em 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 55%;
+    }
+    
+.card:hover {
+    scale: 103%;
+    border-radius: 15px;
+}
+
+    .card__l1 {
+        gap: 20%;
+    }
+
+    .card__l2-botoes-saibamais:hover {
+        background: var(--laranja-escuro);
+        transition: .5s;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .card__descricao-titulo {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--laranja);
+    }
+    
+    .card {
+        padding: 2em 1em;
+    }
+}
